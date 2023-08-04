@@ -15,7 +15,6 @@ A simple React web application for managing contacts. This app allows users to v
 - React Router
 - React Toastify
 - Fetch API for data fetching
-- CSS for styling
 
 ## Project Structure
 
