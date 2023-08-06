@@ -25,7 +25,8 @@ const EditContact = ({ contacts, setContacts }) => {
   }, [currentContact]);
 
   // Function to handle updating a contact
-  const handleUpdateContact = async () => {
+  const handleUpdateContact = async (event) => {
+    event.preventDefault();
     if (!email || !phone || !name) {
       return toast.warning("Please fill in all fields!"); // Display a warning toast
     }
@@ -74,6 +75,7 @@ const EditContact = ({ contacts, setContacts }) => {
       );
 
       setContacts(updatedContacts);
+      navigate("/"); // Navigate back to the home page
       toast.success("Contact updated successfully!"); // Display a success toast
       navigate("/"); // Navigate back to the home page
     } catch (error) {
