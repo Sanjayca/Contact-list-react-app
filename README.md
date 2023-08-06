@@ -1,3 +1,60 @@
+# Contact List App
+
+A simple React web application for managing contacts. This app allows users to view, add, edit, and delete contacts.
+
+## Features
+
+- View a list of contacts
+- Add a new contact
+- Edit an existing contact
+- Delete a contact
+
+## Technologies Used
+
+- React.js
+- React Router
+- React Toastify
+- Fetch API for data fetching
+
+## Project Structure
+
+The project is structured as follows:
+
+- `public/` - Contains the public assets, such as HTML and favicon.
+- `src/`
+  - `components/` - Contains all the React components used in the app.
+    - `AddContact.js` - Component for adding a new contact.
+    - `EditContact.js` - Component for editing an existing contact.
+    - `Home.js` - Component for displaying the list of contacts.
+    - `Navbar.js` - Component for the navigation bar.
+  - `App.js` - The main application component that sets up routing and state management.
+  - `index.js` - Entry point for rendering the app.
+  - `index.css` - Global styles for the app.
+- `README.md` - This file, providing information about the project.
+
+## Getting Started
+
+1. Clone the repository: `git clone https://github.com/your-username/contact-management-app.git`
+2. Navigate to the project directory: `cd contact-management-app`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and go to: `http://localhost:3000`
+
+## Usage
+
+- Visit the homepage to view the list of contacts.
+- Click on "Add Contact" to add a new contact.
+- Click on "Edit" next to a contact to edit its details.
+- Click on "Delete" to remove a contact.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to enhance the app, feel free to open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
