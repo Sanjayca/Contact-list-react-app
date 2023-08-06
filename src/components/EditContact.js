@@ -20,7 +20,7 @@ const EditContact = ({ contacts, setContacts }) => {
     if (currentContact) {
       setName(currentContact.name);
       setEmail(currentContact.email);
-      setNumber(currentContact.number);
+      setNumber(currentContact.phone);
     }
   }, [currentContact]);
 
@@ -36,7 +36,7 @@ const EditContact = ({ contacts, setContacts }) => {
     );
     const checkNumber = contacts.find(
       (contact) =>
-        contact.id !== parseInt(id) && contact.number === parseInt(phone)
+        contact.id !== parseInt(id) && contact.phone === parseInt(phone)
     );
 
     // Display an error toast if email already exists
